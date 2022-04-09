@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #320b0b;
+  }
+  header {
+      color: rgb(91, 85, 85);
+      display: flex;
+  }
+
+  .field {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: center;
+  }
+  .box {
+    background-color: rgb(91, 85, 85);
+    max-width: 200px;
+    min-width: 130px;
+    max-height: 200px;
+    min-height: 130px;
+    border: 2px solid black;
+  }
+  .logo-place {
+      padding-left: 10px;
+      padding-top: 10px;
+  }
