@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 const boxes = Array.from(document.querySelectorAll('.box'));
 const goblin = document.createElement('img');
-goblin.src = 'images/goblin.png';
+goblin.src = 'images/goblin.png ';
 let random;
 setInterval(() => {
   let rnd;
