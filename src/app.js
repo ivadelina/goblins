@@ -1,10 +1,10 @@
 /* eslint-disable linebreak-style */
 const boxes = Array.from(document.querySelectorAll('.box'));
 const goblin = document.createElement('img');
-const mainSection = document.querySelector('.field');
+const mainSection = document.querySelector('.field1');
 const looser = document.querySelector('.looser');
 const newGame = document.querySelector('.newGame');
-console.log(newGame)
+const end = Array.from(document.querySelectorAll('.end'));
 goblin.src = 'images/goblin.png ';
 goblin.classList.add('goblin');
 let random;
@@ -32,15 +32,21 @@ if(counterYouLose === 5) {
   counterYouLose = 0;
   counterYouWin = 0;
   mainSection.classList.add('hide');
-
+  for(let el of end) {
+    el.classList.remove('disappear'); 
+  }
 }
 if(e.target.classList.contains('goblin')) {
   counterYouWin++
-  console.log(counterYouWin);
 };
 };
 
 newGame.addEventListener('click', start)
 function start(e) {
   mainSection.classList.remove('hide');
+  for(let el of end) {
+    el.classList.add('disappear');
+    
+  }
+  
 }
