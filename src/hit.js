@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
+/* eslint-disable linebreak-style */
 /* eslint-disable no-plusplus */
 /* eslint-disable linebreak-style */
 const end = Array.from(document.querySelectorAll('.end'));
